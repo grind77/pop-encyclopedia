@@ -1,0 +1,1 @@
+if("serviceWorker"in navigator){if(navigator.serviceWorker.controller){console.log("[PWA Builder] активный работник службы найден, нет необходимости зарегистрироваться")}else{navigator.serviceWorker.register("pwabuilder-sw.js",{scope:"./"}).then(function(reg){console.log("[PWA Builder] Ошибка сетевого запроса. Обслуживание содержимого из кеша: "+reg.scope)})}}
